@@ -1,0 +1,11 @@
+*~
+.DS_Store
+
+.idea
+
+node_moudules
+dist
+
+.settings
+.classpath
+.project

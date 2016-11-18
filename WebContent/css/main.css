@@ -1,0 +1,560 @@
+/******************
+*页面样式
+*******************/
+
+/*=================
+  基本默认值
+  ================*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 625%;
+    color: #222;
+}
+
+/*::selection {*/
+/*background-color: #b3d4fc;*/
+/*text-shadow: none;*/
+/*}*/
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/*=================
+  工具样式
+  ================*/
+
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.hide {
+    display: none !important; /*会挤占元素的空间*/
+}
+
+.show {
+    display: block !important;
+}
+
+.invisible {
+    visibility: hidden; /*隐藏了不会挤占元素的空间*/
+}
+
+.text-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.hide-on-PC {
+    display: none;
+}
+
+/* ==============
+   浏览器更新提示
+   ==============*/
+
+.browserupgrade {
+    margin: 0;
+    padding: 0.1rem;
+    background: #ccc;
+}
+
+/* ==============
+   自定义页面样式
+   ==============*/
+
+body {
+    line-height: 1.5;
+    color: #000;
+    background-color: #fff;
+    font: 300 21px Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    background: url("../img/bg.jpg") repeat 0 0;
+}
+
+body .grid {
+    max-width: 978px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.grid:before, .grid:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.grid:after {
+    clear: both;
+}
+
+.grid .unit:first-child {
+    padding-left: 20px;
+}
+
+.grid .unit:last-child {
+    padding-right: 20px;
+}
+
+.grid .two-thirds {
+    width: 66.66665%;
+}
+
+h2 {
+    color: #6f1326;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .center-on-mobiles {
+        text-align: center;
+    }
+
+}
+
+@media only screen and (min-width: 719px) {
+
+    .grid .one-third {
+        width: 33.33332%;
+    }
+
+}
+
+/* ==============
+   header 样式
+   ==============*/
+
+header {
+    background-color: #6f1326;
+    padding: 21px 0;
+    -webkit-box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.8);
+    box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.8);
+}
+
+header .icon {
+    margin: 0 auto;
+}
+
+header .icon img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+
+    header .icon {
+        width: 70%;
+    }
+
+}
+
+@media only screen and (max-width: 977px) and (min-width: 768px) {
+
+    header .icon {
+        width: 60%;
+    }
+
+}
+
+@media only screen and (min-width: 978px) {
+
+    header .icon {
+        width: 50%;
+    }
+
+}
+
+/* ==============
+   section.attract 样式
+   ==============*/
+
+.attract .content {
+    padding: 46px 0 10px;
+}
+
+.attract p {
+    font-size: 2.3em;
+    margin: 0;
+    color: #6f1326;
+    text-shadow: 1px 3px 3px rgba(10, 10, 10, 0.6);
+}
+
+@media only screen and (min-width: 714px) {
+
+    .attract p {
+        font-size: 3em;
+    }
+
+}
+
+@media only screen and (max-width: 713px) and  (min-width: 601px) {
+
+    .attract p {
+        font-size: 2.5em;
+    }
+
+}
+
+/* ==============
+   section.intro 样式
+   ==============*/
+
+.intro .unit {
+    padding: 10px;
+    float: left;
+}
+
+.intro .unit:first-child em {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 885px) and (min-width: 775px) {
+
+    .intro .unit h2 {
+        font-size: 1.3em;
+    }
+
+}
+
+@media only screen and (max-width: 774px) and (min-width: 720px) {
+
+    .intro .unit h2 {
+        font-size: 1.2em;
+    }
+
+}
+
+@media only screen and (max-width: 719px) and (min-width: 481px) {
+
+    .intro .unit {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .intro .show-on-big-mobiles {
+        display: block;
+    }
+
+    .intro .hide-on-big-mobiles {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .intro .show-on-slim-mobiles {
+        display: block;
+    }
+
+    .intro .hide-on-slim-mobiles {
+        display: none;
+    }
+
+}
+
+/* ==============
+   section.activities 样式
+   ==============*/
+
+.activities {
+    background-color: #6f1326;
+    margin: 60px 0;
+    -webkit-box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.8);
+    box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.8);
+}
+
+.activities .activity-attract {
+    width: 39%;
+}
+
+.activities .activity-attract h3 {
+    font-size: 24px;
+    text-align: center;
+    color: #ffffff;
+    margin: 50px 0 0;
+}
+
+.activities .activity-images {
+    width: 60%;
+    margin: -30px 0;
+}
+
+.activities .unit {
+    float: left;
+}
+
+.activities .image-pane-big {
+    float: left;
+    width: 33.3332%;
+}
+
+.activities .image-pane-big:first-child {
+    padding-right: 5px;
+}
+
+.activities .image-pane-big:last-child {
+    padding-left: 5px;
+}
+
+.activities .image-pane-small {
+    width: 100%;
+}
+
+.activities .image-pane-small:first-child {
+    margin-bottom: 2px;
+}
+
+.activities img {
+    width: 100%;
+    display: block;
+}
+
+@media only screen and (min-width: 978px) {
+
+    .activities img:hover {
+        opacity: 0.9999;
+        width: 300px;
+        -webkit-transition: width 1s;
+        -moz-transition: width 1s;
+        -ms-transition: width 1s;
+        -o-transition: width 1s;
+        transition: width 1s;
+    }
+
+}
+
+@media only screen and (max-width: 977px) {
+
+    .activities .hide-on-PC {
+        display: block;
+        padding: 0 20px;
+    }
+
+    .activities .show-on-PC {
+        display: none;
+    }
+
+    .activities .hide-on-PC .image-pane-big {
+        width: 49.9999%;
+    }
+
+    .activities .image-pane-big:first-child {
+        padding-right: 3px;
+    }
+
+    .activities .image-pane-big:last-child {
+        padding-left: 3px;
+    }
+
+    .activities .image-pane-small:first-child {
+        margin-bottom: 6px;
+    }
+}
+
+@media only screen and (max-width: 719px) {
+
+    .activities {
+        margin-bottom: 81px;
+    }
+
+    .activities .activity-attract {
+        width: 100%;
+    }
+
+    .activities .activity-images {
+        width: 100%;
+        padding: 0 20px;
+        margin: 50px 0 -30px;
+    }
+
+}
+
+/* ==============
+   section.for-more 样式
+   ==============*/
+
+.for-more .grid > .unit.whole {
+    padding: 20px 20px;
+}
+
+.for-more h2 {
+    font-size: 28px;
+}
+
+.for-more p {
+    font-size: 18px;
+    margin: 0.75em 0;
+}
+
+.for-more .pane {
+    background: rgba(187, 177, 154, 0.4);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-shadow: none;
+    position: relative;
+    padding: 0 20px 0;
+}
+
+.for-more img {
+    float: left;
+    width: 240px;
+    height: 240px;
+    margin: -30px 20px -10px -50px;
+
+}
+
+.for-more .pane-content {
+    padding-top: 10px;
+    padding-right: 30px;
+}
+
+.for-more .pane-content p:last-child {
+    margin-bottom: 0;
+}
+
+@media only screen and (min-width: 769px) {
+
+    .for-more .pane:after {
+        content: "";
+        width: 73px;
+        height: 186px;
+        background: url("../img/arrow.png") top left no-repeat;
+        position: absolute;
+        right: 10px;
+        bottom: -50px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .for-more .pane {
+        padding-bottom: 20px;
+    }
+
+    .for-more img {
+        width: 180px;
+        height: 180px;
+        float: none;
+        margin: -30px 0 -10px;
+    }
+
+    .for-more .pane-content {
+        padding: 0;
+    }
+
+    .for-more .pane-content h2 {
+        margin: 0.5em 0;
+    }
+
+    .for-more .pane-content p {
+        font-size: 16px;
+    }
+
+}
+
+/* ==============
+   footer 样式
+   ==============*/
+
+footer {
+    font-size: 16px;
+    background-color: #6f1326;
+    color: #ffffff;
+    -webkit-box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.8);
+    box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.8);
+    margin-top: 40px;
+}
+
+footer .unit {
+    float: left;
+}
+
+footer .unit:first-child {
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0.5em 0;
+    opacity: 0.8;
+}
+
+footer .image-pane {
+    width: 79px;
+    height: 75px;
+    float: right;
+    margin-top: 28px;
+}
+
+@media only screen and (max-width: 718px) {
+
+    footer .grid > .unit {
+        width: 49.9999%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    footer .grid > .unit {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    footer .image-pane {
+        float: none;
+        margin: 0 auto;
+    }
+
+}
